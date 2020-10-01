@@ -9,7 +9,19 @@
  */
 
 // Your code:
-
+function multiply(nb1, nb2) {
+  if (nb1 === 0 || nb2 === 0) return 0;
+  const absNb1 = Math.abs(nb1);
+  const absNb2 = Math.abs(nb2);
+  let i = 1;
+  let result = 0;
+  while (i <= absNb2) {
+    result += absNb1;
+    i++;
+  }
+  if ((nb1 < 0 || nb2 < 0) && !(nb1 < 0 && nb2 < 0)) { return - result; }
+  return result;
+}
 //* Begin of tests
 const assert = require('assert');
 
