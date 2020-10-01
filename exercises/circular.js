@@ -9,6 +9,12 @@
 
 // Your code:
 
+
+let circular = {
+  circular: null
+};
+circular.circular = circular;
+
 //* Begin of tests
 const assert = require('assert');
 
