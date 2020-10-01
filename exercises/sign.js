@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
  * Create the `sign` function that takes one number argument
@@ -11,12 +11,14 @@
  */
 
 // Your code:
-
+function sign(nb1) {
+  return nb1 > 0 ? 1 : nb1 === 0 ? 0 : -1;
+}
 //* Begin of tests
-const assert = require('assert');
+const assert = require("assert");
 
-assert.strictEqual(typeof sign, 'function');
-assert.strictEqual(sign.toString().includes('Math.sign'), false);
+assert.strictEqual(typeof sign, "function");
+assert.strictEqual(sign.toString().includes("Math.sign"), false);
 assert.strictEqual(sign.length, 1);
 assert.notStrictEqual(sign, Math.sign);
 assert.strictEqual(sign(-2), -1);
