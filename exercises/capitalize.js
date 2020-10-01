@@ -8,7 +8,12 @@
  */
 
 // Your code:
+function capitalize(str) {
+  const firstLetter = str[0].toUpperCase();
+  const secondPart = str.slice(1, str.length).toLowerCase();
+  return firstLetter + secondPart;
 
+}
 //* Begin of tests
 const assert = require('assert');
 
